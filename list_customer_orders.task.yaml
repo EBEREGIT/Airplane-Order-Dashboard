@@ -1,0 +1,12 @@
+slug: list_customer_orders
+name: list customer orders
+parameters:
+  - slug: customer_id
+    name: customer ID
+    type: shorttext
+    required: false
+sql:
+  resource: "[Demo DB]"
+  entrypoint: list_customer_orders.sql
+  queryArgs:
+    customer_id: "{{params.customer_id}}"

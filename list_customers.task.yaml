@@ -1,0 +1,5 @@
+slug: list_customers
+name: list customers
+sql:
+  resource: "[Demo DB]"
+  entrypoint: list_customers.sql

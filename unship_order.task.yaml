@@ -1,0 +1,11 @@
+name: unship order
+slug: unship_order
+parameters:
+  - slug: order_id
+    name: Order ID
+    type: integer
+sql: 
+  resource: "[Demo DB]"
+  entrypoint: unship_order.sql
+  queryArgs:
+    order_id: "{{params.order_id}}"
